@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Autism App</string>
+    <string name="connecting">Connecting...</string>
+    <string name="BTMAC">98:D3:31:FD:92:25</string>
+    <string name="UUID">00001101-0000-1000-8000-00805F9B34FB</string>
+
+    <string-array name="times">
+        <item>5 Minutes (Default)</item>
+        <item>10 Minutes</item>
+        <item>20 Minutes</item>
+        <item>30 Minutes</item>
+        <item>No Time Limit</item>
+    </string-array>
+</resources>

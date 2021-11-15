@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".clockPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/clockTitleTextView"
+            android:layout_width="294dp"
+            android:layout_height="46dp"
+            android:background="#2236B1"
+            android:layout_gravity="center"
+            android:text="Clock and Alarm"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/clockTextView"
+            android:layout_width="120dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:background="#2236B1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Time"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/setClockBtn"
+            android:layout_width="207dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Tap to Choose Time" />
+
+        <TextView
+            android:id="@+id/selectedTimeTextView"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="36sp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/alarmTextView"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:background="#2236B1"
+                android:gravity="center"
+                android:text="Alarm"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/alarmSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/setAlarmBtn"
+            android:layout_width="207dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Tap to Choose Time" />
+
+        <TextView
+            android:id="@+id/selectedAlarmTextView"
+            android:layout_width="160dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="36sp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/silentCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silent Alarm" />
+
+                <CheckBox
+                    android:id="@+id/quietCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quiet Alarm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/snoozeCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Snooze" />
+
+                <CheckBox
+                    android:id="@+id/lightingCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Custom Lighting" />
+            </LinearLayout>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Confirm Settings" />
+
+    </LinearLayout>
+
+</RelativeLayout>

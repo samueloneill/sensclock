@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".alarmLightPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="263dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="#2236B1"
+            android:gravity="center"
+            android:text="Alarm Lighting"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/solidRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solid Colour" />
+
+            <RadioButton
+                android:id="@+id/gradientRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gradient Pattern" />
+
+            <RadioButton
+                android:id="@+id/flashRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flashing Colour" />
+
+            <RadioButton
+                android:id="@+id/noneRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Lights" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/brightnessTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#512236B1"
+            android:gravity="center"
+            android:text="Brightness:"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/brightnessSeekBar"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:background="#512236B1"
+            android:progress="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titleTextView" />
+
+        <TextView
+            android:id="@+id/coloursTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#512236B1"
+            android:gravity="center"
+            android:text="Colour Picker:"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <GridLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF">
+
+            <ImageButton
+                android:id="@+id/multiColourButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                app:srcCompat="@drawable/multicolouricon" />
+
+            <Button
+                android:id="@+id/greenButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="#07B40D"/>
+
+            <Button
+                android:id="@+id/blueButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="#0427E6" />
+
+            <Button
+                android:id="@+id/cyanButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="#2196F3" />
+
+            <Button
+                android:id="@+id/orangeButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:background="#F75F38" />
+
+            <Button
+                android:id="@+id/redButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:background="#FF0000" />
+
+            <Button
+                android:id="@+id/pinkButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="#FF00D1" />
+
+            <Button
+                android:id="@+id/purpleButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="#7500C7" />
+
+            <Button
+                android:id="@+id/yellowButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="#FFEB3B" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/selectedAlLightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#512236B1"
+            android:text="Selected:"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/confAlLightBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Confirm" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
