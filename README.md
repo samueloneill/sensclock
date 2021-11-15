@@ -14,3 +14,8 @@ An Android application allows detailed control over the device's features:
     - change colours, patterns and brightness of the lighting
  - Scheduling
     - create and edit a schedule
+
+# What I Learned
+- How to program an alarm clock using Arduino
+- How to multiplex LED matrices and display text on them
+- How to design and create an Android application in Java using Android Studio
